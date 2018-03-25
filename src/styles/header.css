@@ -2,12 +2,39 @@ body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
 body{font-size:12px;}
 img{border:none;}
 li{list-style: none;}
-input,select,textarea{outline: none;}
+input,select,textarea{outline: none; border: none;}
 textarea{resize: none;}
-a{text-decoration: none;}
+a{text-decoration: none; color: #656565；}
 
+.fl{float: left;}
+.fr{float: right;}
 
-.header button {
+/*公用宽度*/
+.comWidth{width: 1000px;margin-left: auto;margin-right: auto;}
+
+/*topBar*/
+.leftArea{float: left;}
+.rightArea{float: right;}
+
+.topBar{height: 31px;background-color: #F7F7F7; line-height: 31px;}
+
+.topBar a:hover{color: red;}
+
+/*logo*/
+.logoBar{height: 85px;}
+.logo{padding-left: 10px; padding-top: 0px;}
+
+.searchBox{width: 434.8px; padding-top: 23px; padding-left: 185px;}
+.search_text{width: 350px; height: 35px; padding: 0 5px; line-height: 35px\9; border: solid;}
+.search_btn{width: 70px; height: 39.5px; font-size: 14px; font-family: "Microsoft YaHei","微软雅黑"; background-color: #000000; color: #FFF;}
+
+/*shopCar*/
+.shopCar{width: 145px; height: 35px; background-color: #000000; margin-top: 23px;font-size: 14px; font-family: "Microsoft YaHei","微软雅黑"; color: #FFF;}
+.shopText{ height: 100%; width: 87px; line-height: 35px;padding-left: 40px;}
+.shopNum{width: 56px; height: 35px; padding-left: 20px;}
+
+.collection{background: url(../images/icon/collection.png) left center no-repeat; padding-left: 22px; font-weight: bold;}
+.buttonStyle {
     min-height: 1.5em;
     display: inline-block;
     padding: 12px 36px;
