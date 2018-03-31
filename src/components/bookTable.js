@@ -1,7 +1,7 @@
 require('styles/bookTable.css');
 
 import React from 'react';
-import {Link} from 'react-router';
+import Link from 'react-router';
 //import bookDetail from './bookDetail';
 //let bookData = require('../data/bookData.json');
 
@@ -144,7 +144,6 @@ class BookTable extends React.Component{
    }
 
    var idx = parseInt(this.state.selected);
-   console.log({idx});
    var searchData = this.preSearchData.filter(
      function(row){
        return(
@@ -256,48 +255,3 @@ class BookTable extends React.Component{
 }
 
 export default BookTable;
-
-// <td>Book</td>
-// <td>Author</td>
-// <td>Language</td>
-// <td>Published</td>
-// <td>Sales</td>
-// {
-//   newArr
-// }
-/*var edit = this.state.edit;
-if(edit && edit.row === rowidx && edit.cell === idx){
-  content = (
-    <form>
-      <input type="text" defaultValue={cell} />
-    </form>
-  );
-}*/
-
-/*{
-  row.map(function(cell,idx){
-    var content = cell;
-    return <td key={idx} data-row={rowidx}>{content}</td>;
-  },this)}*/
-  /*var newArr=[];
-  this.state.bookList.forEach(function(value, index){
-    newArr.push(<tbody key={index}>
-                  <tr>
-                    <td>{value.Book}</td>
-                    <td>{value.Author}</td>
-                    <td>{value.Language}</td>
-                    <td>{value.Published}</td>
-                    <td>{value.Sales}</td>
-                  </tr>
-                </tbody>)
-  })*/
-  /*<td key="0" data-row={rowidx}>{row[0]}</td>
-  <td key="1" data-row={rowidx}>{row[1]}</td>
-  <td key="2" data-row={rowidx}>{row[2]}</td>
-  <td key="3" data-row={rowidx}>{row[3]}</td>
-  <td key="4" data-row={rowidx}>{row[4]}</td>*/
-  /*function(a,b){
-    return descending
-      ? (a[col] < b[col] ? 1 : -1)
-      : (a[col] > b[col] ? 1 : -1);
-  }*/
