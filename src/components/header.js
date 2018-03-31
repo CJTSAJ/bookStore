@@ -46,9 +46,6 @@ class Header extends React.Component{
             </ul>
           </div>
         </div>
-        <button className="search buttonStyle"><div className="shine"></div>Search</button>
-        <button className="exportJSON buttonStyle"><div className="shine"></div>Export JSON</button>
-        <button className="exportCSV buttonStyle"><div className="shine"></div>Export CSV</button>
       </div>
     );
   }
